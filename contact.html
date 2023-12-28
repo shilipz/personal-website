@@ -15,7 +15,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -60,11 +62,12 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links">
-        <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://github.com/shilipz" class="twitter"><i class="bi bi-github"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100071669616558" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="https://instagram.com/shilipz?igshid=YmJhNjkzNzY=" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://www.linkedin.com/in/shilpaantony/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
+
 
     </div>
 
@@ -81,7 +84,9 @@
         </div>
 
         <div>
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
@@ -115,20 +120,24 @@
             <form action="" method="post" id="submit-form" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" onkeyup="validateName()" >
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                    onkeyup="validateName()">
                   <span class="error-color" id="name-error"></span>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" onkeyup="validateEmail()">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                    onkeyup="validateEmail()">
                   <span class="error-color" id="email-error"></span>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" onkeyup="validateSubject()">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                  onkeyup="validateSubject()">
                 <span class="error-color" id="subject-error"></span>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" onkeyup="validateMessage()"></textarea>
+                <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message"
+                  onkeyup="validateMessage()"></textarea>
                 <span class="error-color" id="message-error"></span>
               </div>
               <div class="my-3">
@@ -136,7 +145,9 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" onkeyup="">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="return validateForm()">Send Message</button>
+                <span id="submit-error"></span>
+              </div>
             </form>
 
           </div>
@@ -165,7 +176,8 @@
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -197,7 +209,7 @@
       backSpeed: 40,
     });
   </script>
-  <script>
+  <!--  <script>
     function validate() {
       var fname = document.gform.fullName.value.trim();
       var contact = document.gform.contact.value;
@@ -234,7 +246,7 @@
       }
       return true;
     }
-  </script>
+  </script> -->
   <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -263,11 +275,11 @@
           data: $("#gform").serialize(),
           method: "post",
           success: function (response) {
-            alert("message successfully sended");
+            alert("message successfully sent");
             window.location.reload();
           },
           error: function (err) {
-            alert("something error");
+            alert("somethingr");
           },
         });
       } else {
@@ -288,29 +300,51 @@
 
 
 
-  <script>
-    $("#submit-form").submit((e)=>{
-        e.preventDefault()
-        $.ajax({
-            url:"https://script.google.com/macros/s/AKfycbw2w7mE2dk6E_mpZHQnFLk7GHtoul9jP-HCRUmDbKw972Fzb71Sdjfixgs-_f3rbX1n/exec",
-            data:$("#submit-form").serialize(),
-            method:"post",
-            success:function (response){
-                alert("Form submitted successfully")
-                window.location.reload()
-                //window.location.href="https://google.com"
-            },
-            error:function (err){
-                alert("Something Error")
+  <!-- <script>
+    $("#submit-form").submit((e) => {
+      e.preventDefault();
 
-            }
-        })
+      // Log the serialized form data to the console
+      console.log($("#submit-form").serialize());
+
+      // Proceed with AJAX request
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbxcvSkCmDqq6U5Y8pClpBLlJMmNNzlbtqmQ4LmB7ppsB9TICloL-yw24qTtVbEw1RBI/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+          alert("Form submitted successfully");
+          window.location.reload();
+          //window.location.href="https://google.com"
+        },
+        error: function (err) {
+          alert("Something went wrong");
+        }
+      });
+    });
+
+  </script> -->
+
+<script>
+  $("#submit-form").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+      url: 'https://script.google.com/macros/s/AKfycbw7obTQm9B5_LwSnJ7_CcXi32NBNY_UsJ3AZi1lzAIX8IYDop4u4P-0OQJONQ888m5y/exec',
+      data: $("#submit-form").serialize(),
+      method: "post",
+      success: function (response) {
+        alert("Form submitted successfully")
+        window.location.reload()
+        //window.location.href="https://google.com"
+      },
+      error: function (err) {
+        alert("Something Error")
+
+      }
     })
+})
 </script>
 
 </body>
 
 </html>
-
-
-
